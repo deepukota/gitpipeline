@@ -5,10 +5,11 @@ pipeline {
             steps {
                 echo 'building war file'
             }
+            steps{
+                echo 'copying war file'
+            }
         }
-        stage('dev'){
-            echo 'stopping services in dev environment'
-        }
+       
     }
     post { 
         always { 

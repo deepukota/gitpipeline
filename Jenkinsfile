@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example2'){
             steps{
-                echo 'Hello World example'
+                copy(file:"C:\Anudeep\test.txt", tofile:"C:\Anudeep\Software\test.txt")
             }
         }
     }

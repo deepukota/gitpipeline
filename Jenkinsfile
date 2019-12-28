@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example2'){
             steps{
-                copy(file:"C:\Anudeep\test.txt", tofile:"C:\Anudeep\Software\test.txt")
+                copy(file:"C:/Anudeep/test.txt", tofile:"C:/Anudeep/Software/test.txt")
             }
         }
     }

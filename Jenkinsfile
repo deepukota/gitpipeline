@@ -1,15 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Example') {
             steps {
-                echo 'building war file'
-            }
-            steps{
-                echo 'copying war file'
+                echo 'Hello World'
             }
         }
-       
     }
     post { 
         always { 

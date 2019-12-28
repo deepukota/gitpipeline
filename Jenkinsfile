@@ -1,10 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('build') {
             steps {
-                echo 'Hello World'
+                echo 'building war file'
             }
+        }
+        stage('dev'){
+            echo 'stopping services in dev environment'
         }
     }
     post { 

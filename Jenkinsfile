@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Example2'){
             steps{
+                def direc=powershell -command "dir"
                 echo 'Test'
             }
         }

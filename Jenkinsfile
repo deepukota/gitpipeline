@@ -6,10 +6,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Example2'){
+        stage('powershell'){
             steps{
-                def direc=powershell -command dir
-                echo 'Test'
+                powershell 'Write-Output "Hello, World! powershell"'
+                
             }
         }
     }
